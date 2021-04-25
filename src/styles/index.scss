@@ -1,0 +1,38 @@
+
+
+body,html {
+font-size: 16px;
+margin: 0;
+padding: 0;
+}
+.container {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+
+
+}
+
+.blue,.coral {
+  
+  font-size: 3rem;
+  h1 {
+   margin: 0;
+  }
+}
+
+.coral {
+ background-color: #FF8577;
+ color: #fdf5f4;
+ 
+}
+
+.blue {
+  background-color: #5551FF;
+  color: #f4f4ff;
+  
+}
+
+.right {
+  text-align: right;
+}
