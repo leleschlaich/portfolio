@@ -9,7 +9,7 @@ const Container = ({ children, coral }) => {
 
   return (
     <div className={`container right ${coral ? 'coral' : 'blue'}`}>
-      <div onClick={handleClick}>{children.title}</div>
+      <div className="title" onClick={handleClick}>{children.title}</div>
       {extended && <div className="aufklappbar">
         {children.body}
       </div>}

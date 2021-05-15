@@ -1,38 +1,89 @@
 
+@import "./typography.css";
+
 
 body,html {
-font-size: 16px;
+font-family: "F2FMittelczyk-Office", sans-serif;
+font-size: calc(12px + 1vw);
+letter-spacing: 0.06rem;
 margin: 0;
 padding: 0;
+}
+
+a {
+  text-decoration: none;
+&:hover {
+  text-decoration: underline dashed;
+}
+  
 }
 .container {
   width: 100%;
   padding: 1rem;
   box-sizing: border-box;
 
-
-}
-
-.blue,.coral {
-  
-  font-size: 3rem;
-  h1 {
-   margin: 0;
-  }
-}
-
-.coral {
- background-color: #FF8577;
- color: #fdf5f4;
- 
-}
-
-.blue {
-  background-color: #5551FF;
+  &:nth-child(even) {
+    background-color: #5551FF;
   color: #f4f4ff;
+  a {
+    color: #FF8577 ;
+    
+  }
+  
+
+  } 
+  
+  &:nth-child(odd) {
+    background-color: #FF8577;
+ color: #fdf5f4;
+ text-align: right;
+ a {
+  color: #5551FF ;
   
 }
+  }
 
-.right {
-  text-align: right;
+
+
 }
+
+  
+  .title {
+    font-size: 3rem;
+    margin: 0;
+    font-family: 'F2FBlurczyk-Bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.48rem;
+    h1{
+      font-size: inherit;
+    }
+  }
+  
+
+
+.spark-video {
+  width: 100%;
+}
+
+.images {
+
+  width: 5rem;
+}
+
+.vertical-video-wrapper {
+ display: flex;
+ flex-direction: row;
+ font-size: 0.75rem;
+  overflow-x: auto;
+}
+
+.spark-video-wrapper {
+  text-align: left;
+  flex: 1;
+  margin-right: 2rem;
+  min-width: 7rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+ }
