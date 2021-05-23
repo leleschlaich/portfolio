@@ -60,7 +60,7 @@ const IndexPage = () => {
                 <div className="vertical-video-wrapper">
                   <div className="spark-video-wrapper">
                     <div
-                      style={{ padding: "176.67% 0 0 0", position: "relative" }}
+                      style={{ padding: "177.78% 0 0 0", position: "relative" }}
                     >
                       <iframe
                         src="https://player.vimeo.com/video/551549680?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
@@ -233,7 +233,7 @@ const IndexPage = () => {
                   Group project with Fidel Thomet, Thomas Haas, Felix Harle
                   <br />
                 </p>
-                
+
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                   <iframe
                     src="https://www.youtube.com/embed/WK2JKF_QzZU?controls=0"
