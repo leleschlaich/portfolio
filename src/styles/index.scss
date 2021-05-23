@@ -21,6 +21,7 @@ a {
   width: 100%;
   padding: 1rem;
   box-sizing: border-box;
+  position: relative;
 
   &:nth-child(even) {
     background-color: #5551FF;
@@ -54,8 +55,9 @@ a {
     font-family: 'F2FBlurczyk-Bold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.48rem;
-    h1{
+    h1 {
       font-size: inherit;
+      margin: 1rem;
     }
   }
   
@@ -67,7 +69,7 @@ a {
 
 .images {
 
-  width: 5rem;
+  width: 100%;
 }
 
 .vertical-video-wrapper {
@@ -79,11 +81,21 @@ a {
 
 .spark-video-wrapper {
   text-align: left;
-  flex: 1;
   margin-right: 2rem;
   min-width: 7rem;
 
   &:last-child {
     margin-right: 0;
   }
+ }
+
+ .nexttohead {
+   position: absolute;
+   top: 2rem;
+   right: 2rem;
+   width: 11rem;
+ }
+
+ .mt-1 {
+   margin-top: 1rem;
  }
