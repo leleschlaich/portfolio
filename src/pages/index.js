@@ -3,7 +3,6 @@ import "../styles/index.scss";
 
 import Container from "../components/container";
 
-import climate1 from "../images/climate1.png";
 import climate2 from "../images/climate2.png";
 
 import speculative1 from "../images/speculative1.png";
@@ -188,8 +187,6 @@ const IndexPage = () => {
                   Teamwork with Aline Sawalsky.
                 </p>
 
-                <img className="images nexttohead" src={climate1}></img>
-
                 <div style={{ padding: "55.07% 0 0 0", position: "relative" }}>
                   <iframe
                     src="https://player.vimeo.com/video/553925379?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
@@ -236,16 +233,23 @@ const IndexPage = () => {
                   Group project with Fidel Thomet, Thomas Haas, Felix Harle
                   <br />
                 </p>
-
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/WK2JKF_QzZU?controls=0"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+                
+                <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+                  <iframe
+                    src="https://www.youtube.com/embed/WK2JKF_QzZU?controls=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
                 <p>
                   See the full website here:
                   <a
@@ -470,8 +474,8 @@ const IndexPage = () => {
             body: (
               <>
                 <p>
-                  Exploring 3D and Animation in Maya. Muted due to copyright: Original with Zoom Zoom by Polo and Pan.
-               
+                  Exploring 3D and Animation in Maya. Muted due to copyright:
+                  Original with Zoom Zoom by Polo and Pan.
                 </p>
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                   <iframe
@@ -489,7 +493,6 @@ const IndexPage = () => {
                     title="ZoomZoom_by Lele Schlaich"
                   ></iframe>
                 </div>
-          
               </>
             ),
           }}
