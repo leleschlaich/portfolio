@@ -156,11 +156,7 @@ const IndexPage = () => {
                       ></iframe>
                     </div>
                     <p>
-                      Breaking Instagram-Boundaries: Nipple “Sticker”. Making of
-                      <a href="https://vimeo.com/502976185" target="_blank">
-                        {" "}
-                        here
-                      </a>
+                      Breaking Instagram-Boundaries: Nipple “Sticker”.
                     </p>
                   </div>
                 </div>
