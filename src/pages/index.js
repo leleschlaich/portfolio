@@ -18,21 +18,45 @@ const IndexPage = () => {
     <>
       <script src="https://player.vimeo.com/api/player.js"></script>
       <main>
-        <title>Home Page</title>
-        <div className="container coral">
-          <h1 className="title">
-            Lele
-            <br />
-            here :)
-          </h1>
-          <p>
-            digital arts
-            <br />
-            multimedia
-            <br />
-            interface design
-          </p>
-        </div>
+        <title>Lele</title>
+
+        <Container>
+          {{
+            title: (
+              <>
+                <h1>
+                  Lele
+                  <br />
+                  here :)
+                </h1>
+                <p>
+                  digital arts
+                  <br />
+                  multimedia
+                </p>
+              </>
+            ),
+            body: (
+              <>
+                <p>
+                  I am Lele Schlaich and I study Interface Design at the
+                  University of Applied Sciences Potsdam. I am passionate about
+                  creating and designing sustainable and intuitive experiences
+                  with mixed media.
+                  </p>
+                  <p>
+                  I raise awareness on climate justice and human rights
+                  with empathy and love for experimenting with design. Therefore
+                  I particularly enjoy exploring the latest advances in media,
+                  speculative thinking, and clarifying complex interaction
+                  systems. I like to do interactive experiences whether they are
+                  digital f.i. in augmented reality, or analogue installations,
+                  mostly documented in film. My newest field is 3D animation.
+                </p>
+              </>
+            ),
+          }}
+        </Container>
 
         <Container>
           {{
@@ -155,9 +179,7 @@ const IndexPage = () => {
                         title="nipple.mov"
                       ></iframe>
                     </div>
-                    <p>
-                      Breaking Instagram-Boundaries: Nipple “Sticker”.
-                    </p>
+                    <p>Breaking Instagram-Boundaries: Nipple “Sticker”.</p>
                   </div>
                 </div>
               </>
@@ -169,9 +191,9 @@ const IndexPage = () => {
           {{
             title: (
               <h1>
-                Climate
+                Meat=
                 <br />
-                Justice
+                Heat?
               </h1>
             ),
             body: (
