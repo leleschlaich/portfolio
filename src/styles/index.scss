@@ -51,6 +51,8 @@ a {
     font-size: inherit;
     margin: 1rem 0;
   }
+
+
 }
 
 .spark-video {
@@ -86,6 +88,28 @@ a {
   width: 11rem;
 }
 
+.mt-0 {
+  margin-top: 0;
+}
+
 .mt-1 {
   margin-top: 1rem;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.profile-picture {
+  width: 30%;
+  float: right;
+  padding-left: 1rem;
+  max-width: 10rem;
 }

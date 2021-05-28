@@ -3,6 +3,8 @@ import "../styles/index.scss";
 
 import Container from "../components/container";
 
+import lele1 from "../images/me.jpg";
+
 import climate2 from "../images/climate2.png";
 
 import speculative1 from "../images/speculative1.png";
@@ -30,6 +32,8 @@ const IndexPage = () => {
                   here :)
                 </h1>
                 <p>
+                  interface design
+                  <br />
                   digital arts
                   <br />
                   multimedia
@@ -38,16 +42,17 @@ const IndexPage = () => {
             ),
             body: (
               <>
-                <p>
+                <img className="profile-picture" src={lele1}></img>
+                <p className="mt-0">
                   I am Lele Schlaich and I study Interface Design at the
                   University of Applied Sciences Potsdam. I am passionate about
                   creating and designing sustainable and intuitive experiences
                   with mixed media.
-                  </p>
-                  <p>
-                  I raise awareness on climate justice and human rights
-                  with empathy and love for experimenting with design. Therefore
-                  I particularly enjoy exploring the latest advances in media,
+                </p>
+                <p>
+                  I raise awareness on climate justice and human rights with
+                  empathy and love for experimenting with design. Therefore I
+                  particularly enjoy exploring the latest advances in media,
                   speculative thinking, and clarifying complex interaction
                   systems. I like to do interactive experiences whether they are
                   digital f.i. in augmented reality, or analogue installations,
@@ -512,6 +517,16 @@ const IndexPage = () => {
                   ></iframe>
                 </div>
               </>
+            ),
+          }}
+        </Container>
+
+        <Container>
+          {{
+            title: (
+              <h1>
+                <a href="mailto:lele@czyk.de">Mail me!</a>
+              </h1>
             ),
           }}
         </Container>
