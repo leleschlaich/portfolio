@@ -432,9 +432,9 @@ const IndexPage = () => {
           {{
             title: (
               <h1>
-                Instal
+                Scenario
                 <br />
-                lation
+                Installation
               </h1>
             ),
             body: (
