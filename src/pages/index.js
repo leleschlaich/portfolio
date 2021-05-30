@@ -1,6 +1,8 @@
 import * as React from "react";
 import "../styles/index.scss";
 
+import { Link } from 'gatsby';
+
 import Container from "../components/container";
 
 import lele1 from "../images/me.jpg";
@@ -196,16 +198,16 @@ const IndexPage = () => {
           {{
             title: (
               <h1>
-                Meat=
+                Scrolly
                 <br />
-                Heat?
+                telling
               </h1>
             ),
             body: (
               <>
                 <p>
-                  Scrollytelling platform to raise awareness on meat
-                  consumption.
+                  Meat = Heat? Website to raise awareness on climate change in
+                  connection to meat consumption, written in Html and Css.
                   <br />
                   Teamwork with Aline Sawalsky.
                 </p>
@@ -243,15 +245,20 @@ const IndexPage = () => {
 
         <Container coral>
           {{
-            title: <h1>Speculative Design: The future in a bag</h1>,
+            title: (
+              <h1>
+                Speculative
+                <br /> Design
+              </h1>
+            ),
             body: (
               <>
                 <p>
-                  What are everyday objects of crisis-ridden futures? <br />
-                  The Future in a Bag navigates the scenario space between
-                  climate crisis, ageing and cyber attacks and designs
-                  resilience artefacts between smartness, dumbness, convenience
-                  and inconvenience.
+                  The future in a bag: What are everyday objects of
+                  crisis-ridden futures? <br />
+                  A scenario space navigating between climate crisis, ageing and
+                  cyber attacks, which designs resilient artefacts between
+                  smartness, dumbness, convenience and inconvenience.
                   <br />
                   Group project with Fidel Thomet, Thomas Haas, Felix Harle
                   <br />
@@ -425,9 +432,9 @@ const IndexPage = () => {
           {{
             title: (
               <h1>
-                Tipping
+                Instal
                 <br />
-                Points
+                lation
               </h1>
             ),
             body: (
@@ -435,9 +442,9 @@ const IndexPage = () => {
                 <p>
                   Visual experiments on disruptive climate system changes due to
                   global warming. We only have only 8 more years to reach the
-                  tipping points of our earth. The amazon rainforest is just one
-                  of them. <br /> Group project with Memo Yapici, Kenny Löffler,
-                  Mariana Reinhardt
+                  tipping points of our earth. The dieback of the amazon
+                  rainforest is just one of them. <br /> Group project with Memo
+                  Yapici, Kenny Löffler, Mariana Reinhardt
                 </p>
 
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
@@ -466,15 +473,16 @@ const IndexPage = () => {
           {{
             title: (
               <h1>
-                Tohil
+                data
                 <br />
+                graphic
               </h1>
             ),
             body: (
               <>
                 <p>
-                  Infographic of the holy Tohil-Fireplace of the Maya. <br />{" "}
-                  1000 words with no words needed
+                  The holy Tohil. The Fireplace of the Maya in data. <br /> 1000
+                  words with no words needed
                 </p>
                 <img className="images mt-1" src={tohil1}></img>
                 <img className="images mt-1" src={tohil2}></img>
@@ -521,15 +529,15 @@ const IndexPage = () => {
           }}
         </Container>
 
-        <Container>
-          {{
-            title: (
-              <h1>
-                <a href="mailto:lele@czyk.de">Mail me!</a>
-              </h1>
-            ),
-          }}
-        </Container>
+        <div className="container footer">
+          <h1>
+            <a href="mailto:lele@czyk.de">Mail me!</a>
+          </h1>
+          <div>
+            <Link to="impressum">Impressum</Link>
+            <Link className="ml-1" to="datenschutz">Datenschutz</Link>
+          </div>
+        </div>
       </main>
     </>
   );

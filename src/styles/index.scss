@@ -9,12 +9,32 @@ html {
   padding: 0;
   max-width: 100vw;
   overflow-x: hidden;
+  cursor: url("../images/pfeil1.png"), auto;
+  // cursor: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png'), auto;
+}
+
+.main {
+  margin: 1rem;
+
+  h1 {
+    margin: initial;
+    font-size: 2rem;
+    text-transform: none;
+    letter-spacing: initial;
+    word-break: break-all;
+
+    span {
+      white-space: wrap;
+    }
+  }
 }
 
 a {
   text-decoration: none;
+  cursor: inherit;
   &:hover {
     text-decoration: underline dashed;
+    cursor: inherit;
   }
 }
 .container {
@@ -41,18 +61,12 @@ a {
   }
 }
 
-.title {
+h1 {
+  margin: 1rem 0;
   font-size: 3rem;
-  margin: 0;
   font-family: "F2FBlurczyk-Bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.48rem;
-  h1 {
-    font-size: inherit;
-    margin: 1rem 0;
-  }
-
-
 }
 
 .spark-video {
@@ -96,15 +110,17 @@ a {
   margin-top: 1rem;
 }
 
+.ml-1 {
+  margin-left: 1rem;
+}
+
 .pr-1 {
   padding-right: 1rem;
 }
 
-
 .row {
   display: flex;
   flex-direction: row;
-
 }
 
 .profile-picture {
@@ -112,4 +128,12 @@ a {
   float: right;
   padding-left: 1rem;
   max-width: 10rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
 }
