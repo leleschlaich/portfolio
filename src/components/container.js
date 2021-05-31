@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Container = ({ children, coral }) => {
+const Container = ({ children }) => {
   const [extended, setExtended] = useState(false);
 
   const handleClick = () => {
@@ -8,7 +8,7 @@ const Container = ({ children, coral }) => {
   }
 
   return (
-    <div className={`container right ${coral ? 'coral' : 'blue'}`}>
+    <div className="container">
       <div className="title" onClick={handleClick}>{children.title}</div>
       {extended && <div className="aufklappbar">
         {children.body}
