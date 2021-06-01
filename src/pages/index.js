@@ -276,7 +276,7 @@ const IndexPage = () => {
                   <iframe
                     src="https://www.youtube-nocookie.com/embed/WK2JKF_QzZU?controls=0"
                     title="YouTube video player"
-                    frameborder="0"
+                    frameBorder="0"
                     style={{
                       position: "absolute",
                       top: 0,
@@ -326,7 +326,7 @@ const IndexPage = () => {
                   <iframe
                     src="https://player.vimeo.com/video/363540500?autoplay=1&amp;muted=1&amp;color=ffffff&amp;portrait=0#t=9m17s&amp;dnt=1"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                    frameborder="0"
+                    frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
                     style={{
@@ -385,7 +385,7 @@ const IndexPage = () => {
                 </p>
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                   <iframe src="https://player.vimeo.com/video/557309123?&amp;muted=0&amp;autoplay=0&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1"
-                    frameborder="0"
+                    frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
                     style={{

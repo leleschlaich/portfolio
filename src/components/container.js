@@ -6,11 +6,14 @@ const Container = ({ children }) => {
   const [eventKey] = useState(uuidv4());
   const { onToggle, activeEventKey } = useContext(ContainerContext);
 
-  const handleClick = () => onToggle(eventKey === activeEventKey ? null : eventKey);
+  const handleClick = () => {
+    window.location.hash = '#' + eventKey;
+    onToggle(eventKey === activeEventKey ? null : eventKey);
+  }
 
   return (
     <div className="container">
-      <div className="title" onClick={handleClick}>
+      <div className="title" onClick={handleClick} id={eventKey}>
         {children.title}
       </div>
       {activeEventKey === eventKey && <div className="aufklappbar">{children.body}</div>}
