@@ -102,7 +102,7 @@ const IndexPage = () => {
                       style={{ padding: "177.78% 0 0 0", position: "relative" }}
                     >
                       <iframe
-                        src="https://player.vimeo.com/video/551549680?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        src="https://player.vimeo.com/video/551549680?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1"
                         frameBorder="0"
                         allow="autoplay; fullscreen; picture-in-picture"
                         allowFullScreen
@@ -130,7 +130,7 @@ const IndexPage = () => {
                       style={{ padding: "177.78% 0 0 0", position: "relative" }}
                     >
                       <iframe
-                        src="https://player.vimeo.com/video/551549444?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        src="https://player.vimeo.com/video/551549444?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1"
                         frameBorder="0"
                         allow="autoplay; fullscreen; picture-in-picture"
                         allowFullScreen
@@ -155,7 +155,7 @@ const IndexPage = () => {
                       style={{ padding: "177.78% 0 0 0", position: "relative" }}
                     >
                       <iframe
-                        src="https://player.vimeo.com/video/551553475?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        src="https://player.vimeo.com/video/551553475?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1"
                         frameBorder="0"
                         allow="autoplay; fullscreen; picture-in-picture"
                         allowFullScreen
@@ -180,7 +180,7 @@ const IndexPage = () => {
                       style={{ padding: "177.78% 0 0 0", position: "relative" }}
                     >
                       <iframe
-                        src="https://player.vimeo.com/video/553921813?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        src="https://player.vimeo.com/video/553921813?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1"
                         frameBorder="0"
                         allow="autoplay; fullscreen; picture-in-picture"
                         allowFullScreen
@@ -222,7 +222,7 @@ const IndexPage = () => {
 
                 <div style={{ padding: "55.07% 0 0 0", position: "relative" }}>
                   <iframe
-                    src="https://player.vimeo.com/video/553925379?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    src="https://player.vimeo.com/video/553925379?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
@@ -274,7 +274,7 @@ const IndexPage = () => {
 
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                   <iframe
-                    src="https://www.youtube.com/embed/WK2JKF_QzZU?controls=0"
+                    src="https://www.youtube-nocookie.com/embed/WK2JKF_QzZU?controls=0"
                     title="YouTube video player"
                     frameborder="0"
                     style={{
@@ -324,7 +324,7 @@ const IndexPage = () => {
 
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                   <iframe
-                    src="https://player.vimeo.com/video/363540500?autoplay=1&amp;color=ffffff&amp;portrait=0#t=9m17s"
+                    src="https://player.vimeo.com/video/363540500?autoplay=1&amp;muted=1&amp;color=ffffff&amp;portrait=0#t=9m17s&amp;dnt=1"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;"
                     frameborder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
@@ -384,8 +384,7 @@ const IndexPage = () => {
                   Original with Zoom Zoom by Polo and Pan.
                 </p>
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-                  <iframe
-                    src="https://player.vimeo.com/video/554046210?&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  <iframe src="https://player.vimeo.com/video/557309123?&amp;muted=0&amp;autoplay=0&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1"
                     frameborder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
