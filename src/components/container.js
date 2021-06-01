@@ -1,18 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import ContainerContext from "../components/containerContext";
+import { v4 as uuidv4 } from 'uuid';
 
 const Container = ({ children }) => {
-  const [extended, setExtended] = useState(false);
+  const [eventKey] = useState(uuidv4());
+  const { onToggle, activeEventKey } = useContext(ContainerContext);
 
-  const handleClick = () => {
-    setExtended(!extended);
-  }
+  const handleClick = () => onToggle(eventKey === activeEventKey ? null : eventKey);
 
   return (
     <div className="container">
-      <div className="title" onClick={handleClick}>{children.title}</div>
-      {extended && <div className="aufklappbar">
-        {children.body}
-      </div>}
+      <div className="title" onClick={handleClick}>
+        {children.title}
+      </div>
+      {activeEventKey === eventKey && <div className="aufklappbar">{children.body}</div>}
     </div>
   );
 };

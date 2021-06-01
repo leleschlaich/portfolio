@@ -1,9 +1,10 @@
-import * as React from "react";
+import React, { useMemo, useState } from "react";
 import "../styles/index.scss";
 
-import { Link } from 'gatsby';
+import { Link } from "gatsby";
 
 import Container from "../components/container";
+import ContainerContext from "../components/containerContext";
 
 import lele1 from "../images/me.jpg";
 
@@ -18,8 +19,15 @@ import tohil3 from "../images/tohil3.png";
 import tippingpoints1 from "../images/tippingpoints1.jpg";
 
 const IndexPage = () => {
+  const [eventKey, setEventKey] = useState(null);
+
+  const context = useMemo(() => ({
+    activeEventKey: eventKey,
+    onToggle: (newEventKey) => setEventKey(newEventKey)
+  }), [eventKey, setEventKey]);
+
   return (
-    <>
+    <ContainerContext.Provider value={context}>
       <script src="https://player.vimeo.com/api/player.js"></script>
       <main>
         <title>Lele</title>
@@ -295,139 +303,6 @@ const IndexPage = () => {
           }}
         </Container>
 
-        {/* <Container>
-          {{
-            title: (
-              <h1>
-                Exposing
-                <br />
-                Sanssouci
-              </h1>
-            ),
-            body: (
-              <>
-                <p>
-                  Immersive 360° Videos to create time travel in the Garden of
-                  Sanssouci. Group Project with Mariana Reinhardt and Renee
-                  Klaßen.
-                </p>
-                <div className="vertical-video-wrapper">
-                  <div className="spark-video-wrapper">
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/R9Sik5KrBYg"
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-                  <div className="spark-video-wrapper">
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/bd3tEKWhFOw"
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-                  <div className="spark-video-wrapper">
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/hFGuCoCL9fg"
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-                </div>
-              </>
-            ),
-          }}
-        </Container> */}
-
-        {/* <Container coral>
-          {{
-            title: (
-              <h1>
-                Processing
-                <br />
-              </h1>
-            ),
-            body: (
-              <>
-                <p>Exploring Generative Design and Code in Processing.</p>
-                <div className="vertical-video-wrapper">
-                  <div
-                    style={{ padding: "94.41% 0 0 0", position: "relative" }}
-                    className="spark-video-wrapper"
-                  >
-                    <iframe
-                      src="https://player.vimeo.com/video/303723796?muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                      frameBorder="0"
-                      allow="autoplay; fullscreen; picture-in-picture"
-                      allowFullScreen
-                      style={{
-                        position: "absolute",
-                        top: 0,
-                        left: 0,
-                        width: "100%",
-                        height: "100%",
-                      }}
-                      title="T&amp;uuml;rchen 9"
-                    ></iframe>
-                  </div>
-                  <div className="spark-video-wrapper">
-                    <div
-                      style={{ padding: "85.85% 0 0 0", position: "relative" }}
-                    >
-                      <iframe
-                        src="https://player.vimeo.com/video/303713067?muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                        frameBorder="0"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowFullScreen
-                        style={{
-                          position: "absolute",
-                          top: 0,
-                          left: 0,
-                          width: "100%",
-                          height: "100%",
-                        }}
-                        title="T&amp;uuml;rchen 1"
-                      ></iframe>
-                    </div>
-                  </div>
-                  <div className="spark-video-wrapper">
-                    <div
-                      style={{ padding: "75.21% 0 0 0", position: "relative" }}
-                    >
-                      <iframe
-                        src="https://player.vimeo.com/video/303715448?muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                        frameBorder="0"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowFullScreen
-                        style={{
-                          position: "absolute",
-                          top: 0,
-                          left: 0,
-                          width: "100%",
-                          height: "100%",
-                        }}
-                        title="T&amp;uuml;rchen 3"
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </>
-            ),
-          }}
-        </Container> */}
-
         <Container>
           {{
             title: (
@@ -535,11 +410,13 @@ const IndexPage = () => {
           </h1>
           <div>
             <Link to="impressum">Impressum</Link>
-            <Link className="ml-1" to="datenschutz">Datenschutz</Link>
+            <Link className="ml-1" to="datenschutz">
+              Datenschutz
+            </Link>
           </div>
         </div>
       </main>
-    </>
+    </ContainerContext.Provider>
   );
 };
 
