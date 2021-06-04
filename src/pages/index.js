@@ -309,7 +309,7 @@ const IndexPage = () => {
               <h1>
                 Scenario
                 <br />
-                Installa<wbr/>tion
+                Instal<wbr/>lation
               </h1>
             ),
             body: (
