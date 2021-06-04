@@ -255,7 +255,7 @@ const IndexPage = () => {
           {{
             title: (
               <h1>
-                Speculative
+                Specula<wbr/>tive
                 <br /> Design
               </h1>
             ),
@@ -309,7 +309,7 @@ const IndexPage = () => {
               <h1>
                 Scenario
                 <br />
-                Installation
+                Installa<wbr/>tion
               </h1>
             ),
             body: (
