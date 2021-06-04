@@ -10,7 +10,9 @@ const Container = ({ children }) => {
   const handleClick = () => {
     const newEventKey = eventKey === activeEventKey ? null : eventKey;
     onToggle(newEventKey);
-    if (newEventKey) setTimeout(() => container.current.scrollIntoView(true), 100);
+    if (newEventKey) setTimeout(() => container.current.scrollIntoView({
+      behavior: 'smooth'
+    }), 100);
   }
 
   return (

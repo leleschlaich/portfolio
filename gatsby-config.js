@@ -7,6 +7,12 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
     {
+      resolve: `gatsby-plugin-polyfill-io`,
+      options: {
+        features: [`Element.prototype.scrollIntoView`]
+      },
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
