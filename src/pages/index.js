@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 import Container from "../components/container";
 import ContainerContext from "../components/containerContext";
 
-import lele1 from "../images/me.jpg";
+import lele1 from "../images/me.jpeg";
 
 import climate2 from "../images/climate2.png";
 
