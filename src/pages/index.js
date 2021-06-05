@@ -21,10 +21,13 @@ import tippingpoints1 from "../images/tippingpoints1.jpg";
 const IndexPage = () => {
   const [eventKey, setEventKey] = useState(null);
 
-  const context = useMemo(() => ({
-    activeEventKey: eventKey,
-    onToggle: (newEventKey) => setEventKey(newEventKey)
-  }), [eventKey, setEventKey]);
+  const context = useMemo(
+    () => ({
+      activeEventKey: eventKey,
+      onToggle: (newEventKey) => setEventKey(newEventKey),
+    }),
+    [eventKey, setEventKey]
+  );
 
   return (
     <ContainerContext.Provider value={context}>
@@ -54,10 +57,11 @@ const IndexPage = () => {
               <>
                 <img className="profile-picture" src={lele1}></img>
                 <p className="mt-0">
-                  I am Lele Schlaich and I study Interface Design at the
-                  University of Applied Sciences Potsdam. I am passionate about
-                  creating and designing sustainable and intuitive experiences
-                  with mixed media.
+                  Hi, I am Lele Schlaich and study Interface Design at the
+                  University of Applied Sciences Potsdam. Right now, I am doing
+                  an Erasmus Semester in Digital Arts and Multimedia at ESAD
+                  Porto. I am passionate about creating and designing
+                  sustainable and intuitive experiences with mixed media.
                 </p>
                 <p>
                   I raise awareness on climate justice and human rights with
@@ -255,7 +259,9 @@ const IndexPage = () => {
           {{
             title: (
               <h1>
-                Specula<wbr/>tive
+                Specula
+                <wbr />
+                tive
                 <br /> Design
               </h1>
             ),
@@ -309,7 +315,9 @@ const IndexPage = () => {
               <h1>
                 Scenario
                 <br />
-                Instal<wbr/>lation
+                Instal
+                <wbr />
+                lation
               </h1>
             ),
             body: (
@@ -324,7 +332,7 @@ const IndexPage = () => {
 
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                   <iframe
-                    src="https://player.vimeo.com/video/363540500?autoplay=1&amp;muted=1&amp;color=ffffff&amp;portrait=0#t=9m17s&amp;dnt=1"
+                    src="https://player.vimeo.com/video/363540500?autoplay=1&amp;muted=1&amp;color=ffffff&amp;portrait=0#t=9m19s&amp;dnt=1"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
@@ -384,7 +392,8 @@ const IndexPage = () => {
                   Original with Zoom Zoom by Polo and Pan.
                 </p>
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-                  <iframe src="https://player.vimeo.com/video/557309123?&amp;muted=0&amp;autoplay=0&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1"
+                  <iframe
+                    src="https://player.vimeo.com/video/557309123?&amp;muted=0&amp;autoplay=0&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
