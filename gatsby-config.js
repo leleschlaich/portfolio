@@ -1,7 +1,9 @@
+require('dotenv-flow').config();
+
 module.exports = {
   pathPrefix: "/portfolio",
   siteMetadata: {
-    title: "portfolio",
+    title: "Portfolio",
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -9,7 +11,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-polyfill-io`,
       options: {
-        features: [`Element.prototype.scrollIntoView`]
+        features: [`Element.prototype.scrollIntoView`],
       },
     },
     {
@@ -26,6 +28,13 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `t9j1teswyxeu`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
     },
   ],
 };

@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import "../styles/index.scss";
 
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 
 import Container from "../components/container";
 import ContainerContext from "../components/containerContext";
@@ -18,7 +18,7 @@ import tohil3 from "../images/tohil3.png";
 
 import tippingpoints1 from "../images/tippingpoints1.jpg";
 
-const IndexPage = () => {
+const IndexPage = (props) => {
   const [eventKey, setEventKey] = useState(null);
 
   const context = useMemo(
@@ -100,106 +100,31 @@ const IndexPage = () => {
                     </a>
                   </p>
                 </div>
+
                 <div className="vertical-video-wrapper">
-                  <div className="spark-video-wrapper">
-                    <div
-                      style={{ padding: "177.78% 0 0 0", position: "relative" }}
-                    >
-                      <iframe
-                        src="https://player.vimeo.com/video/551549680?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1"
-                        frameBorder="0"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowFullScreen
+                  {props.data.allContentfulIgFilter.edges.map(({ node: igFilter }) => (
+                    <div className="spark-video-wrapper" key={igFilter.id}>
+                      <div
                         style={{
-                          position: "absolute",
-                          top: 0,
-                          left: 0,
-                          width: "100%",
-                          height: "100%",
+                          padding: "177.78% 0 0 0",
+                          position: "relative",
                         }}
-                        title="spark3"
-                      ></iframe>
-                    </div>
-                    <p>
-                      Sustainability Challenge with Nina Zeisler. Video about
-                      the project{" "}
-                      <a href="https://vimeo.com/435892256" target="_blank">
-                        here
-                      </a>
-                    </p>
-                  </div>
-
-                  <div className="spark-video-wrapper">
-                    <div
-                      style={{ padding: "177.78% 0 0 0", position: "relative" }}
-                    >
-                      <iframe
-                        src="https://player.vimeo.com/video/551549444?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1"
-                        frameBorder="0"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowFullScreen
-                        style={{
-                          position: "absolute",
-                          top: 0,
-                          left: 0,
-                          width: "100%",
-                          height: "100%",
+                      >
+                        <video
+                          src={igFilter.video.file.url}
+                          className="video"
+                          autoPlay
+                          loop
+                          muted
+                        ></video>
+                      </div>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: igFilter.description && igFilter.description.description,
                         }}
-                        title="spark1"
-                      ></iframe>
+                      ></p>
                     </div>
-                    <p>
-                      Face-Embroidery for music video to TACHY´s “Signify” with
-                      Mariana Reinhardt
-                    </p>
-                  </div>
-
-                  <div className="spark-video-wrapper">
-                    <div
-                      style={{ padding: "177.78% 0 0 0", position: "relative" }}
-                    >
-                      <iframe
-                        src="https://player.vimeo.com/video/551553475?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1"
-                        frameBorder="0"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowFullScreen
-                        style={{
-                          position: "absolute",
-                          top: 0,
-                          left: 0,
-                          width: "100%",
-                          height: "100%",
-                        }}
-                        title="spark4.webm"
-                      ></iframe>
-                    </div>
-                    <p>
-                      Random generator “What Riso-Colour are you” for
-                      @drucken3000
-                    </p>
-                  </div>
-
-                  <div className="spark-video-wrapper">
-                    <div
-                      style={{ padding: "177.78% 0 0 0", position: "relative" }}
-                    >
-                      <iframe
-                        src="https://player.vimeo.com/video/553921813?controls=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1"
-                        frameBorder="0"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowFullScreen
-                        style={{
-                          position: "absolute",
-                          top: 0,
-                          left: 0,
-                          width: "100%",
-                          height: "100%",
-                        }}
-                        title="nipple.mov"
-                      ></iframe>
-                    </div>
-                    <p>Breaking Instagram-Boundaries: Nipple “Sticker”.</p>
-                  </div>
+                  ))}
                 </div>
               </>
             ),
@@ -429,3 +354,28 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+  query portfolio {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allContentfulIgFilter(sort: {fields: title}) {
+      edges {
+        node {
+          id
+          description {
+            description
+          }
+          video {
+            file {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+`;
