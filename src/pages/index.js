@@ -105,6 +105,7 @@ const IndexPage = (props) => {
                             autoPlay
                             loop
                             muted
+                            playsInline
                           ></video>
                         </div>
                         <p
