@@ -6,8 +6,6 @@ import { Link, graphql } from "gatsby";
 import Container from "../components/container";
 import ContainerContext from "../components/containerContext";
 
-import lele1 from "../images/me.jpeg";
-
 import climate2 from "../images/climate2.png";
 
 import speculative1 from "../images/speculative1.png";
@@ -55,23 +53,13 @@ const IndexPage = (props) => {
             ),
             body: (
               <>
-                <img className="profile-picture" src={lele1}></img>
-                <p className="mt-0">
-                  Hi, I am Lele Schlaich and study Interface Design at the
-                  University of Applied Sciences Potsdam. Right now, I am doing
-                  an Erasmus Semester in Digital Arts and Multimedia at ESAD
-                  Porto. I am passionate about creating and designing
-                  sustainable and intuitive experiences with mixed media.
-                </p>
-                <p>
-                  I raise awareness on climate justice and human rights with
-                  empathy and love for experimenting with design. Therefore I
-                  particularly enjoy exploring the latest advances in media,
-                  speculative thinking, and clarifying complex interaction
-                  systems. I like to do interactive experiences whether they are
-                  digital f.i. in augmented reality, or analogue installations,
-                  mostly documented in film. My newest field is 3D animation.
-                </p>
+                <img className="profile-picture" src={props.data.contentfulAboutMe.profilePicture.file.url}></img>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      props.data.contentfulAboutMe.description.description,
+                  }}
+                ></div>
               </>
             ),
           }}
@@ -102,29 +90,33 @@ const IndexPage = (props) => {
                 </div>
 
                 <div className="vertical-video-wrapper">
-                  {props.data.allContentfulIgFilter.edges.map(({ node: igFilter }) => (
-                    <div className="spark-video-wrapper" key={igFilter.id}>
-                      <div
-                        style={{
-                          padding: "177.78% 0 0 0",
-                          position: "relative",
-                        }}
-                      >
-                        <video
-                          src={igFilter.video.file.url}
-                          className="video"
-                          autoPlay
-                          loop
-                          muted
-                        ></video>
+                  {props.data.allContentfulIgFilter.edges.map(
+                    ({ node: igFilter }) => (
+                      <div className="spark-video-wrapper" key={igFilter.id}>
+                        <div
+                          style={{
+                            padding: "177.78% 0 0 0",
+                            position: "relative",
+                          }}
+                        >
+                          <video
+                            src={igFilter.video.file.url}
+                            className="video"
+                            autoPlay
+                            loop
+                            muted
+                          ></video>
+                        </div>
+                        <p
+                          dangerouslySetInnerHTML={{
+                            __html:
+                              igFilter.description &&
+                              igFilter.description.description,
+                          }}
+                        ></p>
                       </div>
-                      <p
-                        dangerouslySetInnerHTML={{
-                          __html: igFilter.description && igFilter.description.description,
-                        }}
-                      ></p>
-                    </div>
-                  ))}
+                    )
+                  )}
                 </div>
               </>
             ),
@@ -362,7 +354,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allContentfulIgFilter(sort: {fields: title}) {
+    allContentfulIgFilter(sort: { fields: title }) {
       edges {
         node {
           id
@@ -374,6 +366,16 @@ export const pageQuery = graphql`
               url
             }
           }
+        }
+      }
+    }
+    contentfulAboutMe(contentful_id: { eq: "2zdg2IXjGyOZJhd3rGqqGn" }) {
+      description {
+        description
+      }
+      profilePicture {
+        file {
+          url
         }
       }
     }
