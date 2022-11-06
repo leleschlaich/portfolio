@@ -1,4 +1,3 @@
-//hier neue bilder reinladen 
 import React, { useMemo, useState } from "react";
 import "../styles/index.scss";
 
