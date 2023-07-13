@@ -10,6 +10,9 @@ import climate2 from "../images/climate2.png";
 
 import speculative1 from "../images/speculative1.png";
 
+import acai1 from "../images/acai1.png";
+import acai2 from "../images/acai2.png";
+
 import tohil1 from "../images/tohil1.png";
 import tohil2 from "../images/tohil2.png";
 import tohil3 from "../images/tohil3.png";
@@ -120,6 +123,69 @@ const IndexPage = (props) => {
                   )}
                 </div>
               </>
+            ),
+          }}
+        </Container>
+
+        <Container>
+          {{
+            title: (
+              <h1>
+                Decolonising 
+                <br />
+                Design
+              </h1>
+            ),
+            body: (
+              <>
+                <p>
+                Semester: 8
+                  <br />
+                  Class: Decolonizing Data Visualization – Visualizing Postcolonies
+                  <br />
+                  Lecturers: Prof. Dr. Marian Dörk and Lamin Manneh
+                  <br />
+                  Teamwork: Mariana Reinhardt
+                  <br />
+                  Website-Link:
+                  <a
+                    href="https://leleschlaich.github.io/decolonizingdataviz/"
+                    target="_blank"
+                  >
+                    &nbsp;Açaí, the superfood?
+                  </a>
+                  <br />
+                  <br />
+                We were intrigued by the story of the açaí and how it is entangled by the marketing of superfoods. From an indigenous food to a trendy superfood bowl: how did this process happen? How does the process of exotification of products originally from the Global South happens? What is the impact of such products? On communities, environmentally and more.
+                <br />
+                  <br />In the course I learned to look at topics from different angles by reading papers about the historical facts and design view, but also the informative inputs from guests made us learn a lot. 
+                  <br />
+                  <br />We wanted to look at the small stories and data but also the important numbers and information to see bigger picture on how the açaí is depicted, in a small but also on a larger scale. For example, we were fascinated by the indigenous myth but then also seeing the numbers of exportation nowadays.
+                  <br />
+                  <br />In a lot of sources the opinion and perspectives shown doesn´t capture the other side of the story. For instance when researching about superfoods, they are mostly highly advertised and if we look deeper there’s a lot more we could find in a critical direction.
+                 
+                </p>
+
+                <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+                <iframe
+                    src="https://player.vimeo.com/video/755631196?h=3d2e8cffff?autoplay=1&amp;muted=1&amp;color=ffffff&amp;portrait=0&amp;dnt=1"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  ></iframe>
+                </div>
+                <img className="images mt-1" src={acai1}></img>
+                <img className="images mt-1" src={acai2}></img>
+               </>
+               
             ),
           }}
         </Container>
