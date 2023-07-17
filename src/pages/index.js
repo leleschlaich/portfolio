@@ -204,30 +204,46 @@ const IndexPage = (props) => {
             body: (
               <>
                 <p>
-                Website-Link:
+                One of my biggest passions is UX/UI. I had great fun redesigning the experience of
                   <a
                     href="https://neeeu.io/"
                     target="_blank"
                   >
-                    &nbsp;NEEEU
+                    &nbsp;NEEEU´s website
                   </a>
-                  <br />
-                  Redesign Website
-                  <br />
-                  <br />
-                 worked on the Apps Jo´s Memory and Magic Roads to Aliso. 
+                
+                 , as well as participating in creating the App games "Jo´s Memory" and "Magic Roads to Aliso". For both I worked with on the UI/UX and Augmented reality inputs.
 
-Jo´s Memory: Das Mobile Game vermittelt auf spielerische Art Wissen über archäologische Objekte. Drei  Museen im Bereich Archäologie und eine Digitalagentur haben sich mit Bürger:innen zusammengeschlossen und arbeiten gemeinsam an der Entwicklung neuer digitaler Vermittlungsformate. Ziel dieses Verbunds ist es, mit Hilfe von interaktiven Medien (wie Virtual und Augmented Reality) archäologische Arbeitsweisen (Ausgraben, Archivieren, Restaurieren, Interpretieren etc.) für alle erlebbar zu machen.
+                 Both mobile games convey knowledge about archaeological objects in a playful way. Three museums in the field of archaeology and a digital agency have joined forces with citizens and are working together to develop new digital communication formats. The aim of this alliance is to use interactive media (such as virtual and augmented reality) to make archaeological working methods (excavation, archiving, restoration, interpretation, etc.) tangible for everyone.
               <br />
                   <br />
-
-https://www.lwl-landesmuseum-herne.de/de/unsere-digitalen-angebote/jos-memory-das-game/
- 
-Appstore: https://apps.apple.com/us/app/jos-memory/id1577374989
-
-https://www.blackbox.game/josmemory
-
-https://www.blackbox.game/magic-roads
+                  Jo´s Memory:
+                  <a
+                    href="https://neeeu.io/projects/jos-memory-a-game-that-opens-up-access-to-archeology"
+                    target="_blank"
+                  >
+                    &nbsp;Information </a>
+                  and 
+                  <a
+                    href="https://apps.apple.com/us/app/jos-memory/id1577374989"
+                    target="_blank"
+                  >
+                    &nbsp;Appstore </a>
+                  <br /><br />
+                  Magic Roads to Aliso: 
+                  <a
+                    href="https://neeeu.io/projects/magic-roads-to-aliso-dancing-skeletons-a-mysterious-germanic-seer-and-chickens-that-predict-the-future"
+                    target="_blank"
+                  >
+                    &nbsp;Information </a>
+                  and 
+                  <a
+                    href="https://apps.apple.com/us/app/magic-roads/id6443717891"
+                    target="_blank"
+                  >
+                    &nbsp;Appstore 
+                  </a>
+    
 
 
                 </p>
@@ -248,8 +264,7 @@ https://www.blackbox.game/magic-roads
                     }}
                   ></iframe>
                 </div>
-                <img className="images mt-1" src={acai1}></img>
-                <img className="images mt-1" src={acai2}></img>
+                
                </>
                
             ),
