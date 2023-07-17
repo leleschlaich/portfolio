@@ -19,6 +19,16 @@ import tohil3 from "../images/tohil3.png";
 
 import tippingpoints1 from "../images/tippingpoints1.jpg";
 
+import trackthebat1 from "../images/trackthebat1.png";
+import trackthebat2 from "../images/trackthebat2.png";
+import trackthebat3 from "../images/trackthebat3.png";
+import trackthebat4 from "../images/trackthebat4.png";
+import trackthebat5 from "../images/trackthebat5.png";
+import trackthebat6 from "../images/trackthebat6.png";
+import trackthebat7 from "../images/trackthebat7.png";
+import trackthebat8 from "../images/trackthebat8.png";
+
+
 const IndexPage = (props) => {
   const [eventKey, setEventKey] = useState(null);
 
@@ -81,14 +91,9 @@ const IndexPage = (props) => {
               <>
                 <div>
                   <p>
-                    Augmented Reality with SparkAR.
-                    <br /> See more in my{" "}
-                    <a
-                      href="https://www.facebook.com/sparkarhub/portfolios/ig/leleschl/"
-                      target="_blank"
-                    >
-                      AR-Filter-Portfolio
-                    </a>
+                  Projects with Augmented Reality created in SparkAR. 
+                  <br />
+                  
                   </p>
                 </div>
 
@@ -266,34 +271,37 @@ https://www.blackbox.game/magic-roads
  A tool for documenting bat sightings with Citizen Science.
 <br />
 <br />
-                Bats do not play a big role in our everyday life, although they are all around us and especially in cities, due to shelter, niches and food sources.
-The aim of this work is to show how we, as inhabitants of cities, can contribute to the welfare of bats and at the same time support science, connect and inform ourselves. For this reason, a website will be created as a network and tool. Most important is to attract attention.
-Furthermore, by sharing data, education is created; informing about bats, insects and their connection, encouraging simple action, showing how to get involved and help, and how to act in emergencies. In doing so, users should be able to get information easily and participate without a hurdle.
-The theories of Citizen Science, as well as Nudging, will be explored and how they can be used. It also explains the connection of the theories to this work, the „Track the Bat“ project.
-The inspiration for „Track the Bat“ comes from the student project: „Catch me if you can“ led by Dr. Tanja Straka at the TU Berlin. Data collection was started by students and supported by Citizen Science. This data will be made visible in the form of an interactive map, as part of a website. The data includes the 19 selected sites and associated per month the number of bats, bat species, food occurrence (insect numbers and species), ground conditions (degree of sealing) and the presence of water bodies on site. In this study, the data were recorded in winter and not in summer, as in most scientific studies on animals or even bats. For bats, the increasingly mild winters due to climate change are a major problem, as they disrupt hibernation, which is essential for bats.
-So far, data is only available for the winter of 2021. The goal is to collect this data over the next few years to create a more meaningful picture.
-My motivation is to show the bat as an example species, which has to adapt to humans and therefore to climate change. But it stands for many other animal species. The website „Track the Bat“ aims to make this visible through interactivity and to show how close the animals are to us.
+Bats do not play a big role in our everyday life, although they are all around us and especially in cities, due to shelter, niches and food sources. 
+<br />
+<br />
 
+The aim of this work is to show how we, as inhabitants of cities, as citizen scientists, can contribute to the welfare of bats and at the same time support science, connect and inform ourselves. For this reason, a website is created as a tool and network. 
+<br />
+<br />
+
+
+The inspiration for „Track the Bat“ started from the student project: „Catch me if you can“ led by Dr. Tanja Straka at the TU Berlin. Data collection was started by students and supported by Citizen Science.<br /> „Track the Bat“ makes this data visible in the form of an interactive map, as part of a website. The data includes the 19 selected sites and associates per month the number of bats, bat species, food occurrence (insect numbers and species), ground conditions (degree of sealing) and the presence of water bodies on site. 
+<br />
+<br />
+
+For bats, the increasingly mild winters due to climate change are a major problem, as they disrupt hibernation, which is essential for bats. My motivation is to show the bat as an example species, which has to adapt to humans and therefore to climate change. But it stands for many other animal species. The website „Track the Bat“ aims to make this visible through interactivity and to show how close the animals are to us.
                 </p>
-
-                <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-                <iframe
-                    src="https://player.vimeo.com/video/755631196?h=3d2e8cffff?autoplay=1&amp;muted=1&amp;color=ffffff&amp;portrait=0&amp;dnt=1"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%",
-                    }}
-                  ></iframe>
-                </div>
-                <img className="images mt-1" src={acai1}></img>
-                <img className="images mt-1" src={acai2}></img>
+                <br />Welcome-Screen
+                <img className="images mt-1" src={trackthebat1}></img>
+                <br /><br />Overview and legend
+                <img className="images mt-1" src={trackthebat2}></img>
+                <br /><br />Add your own sightings
+                <img className="images mt-1" src={trackthebat3}></img>
+                <br /><br />Registration successful
+                <img className="images mt-1" src={trackthebat4}></img>
+                <br /><br />New Level
+                <img className="images mt-1" src={trackthebat5}></img>
+                <br /><br />Mobile View
+                <img className="images mt-1" src={trackthebat6}></img>
+                <br /><br />How to
+                <img className="images mt-1" src={trackthebat7}></img>
+                <br /><br />Bat species in Berlin
+                <img className="images mt-1" src={trackthebat8}></img>
                </>
                
             ),
@@ -453,16 +461,12 @@ In our work, we show alternative strategies of crisis management that focus on t
             body: (
               <>
                 <p>
-                Semester: 6
+               
                   <br />
                   <br />
-                  My Erasmus-Semester was a great time for me to explore 
-                  other and mainly new directions of digital arts and multimedia: 
-                  3-Dimensionality and Animation, 2D-Animation, Film and Sound Production and Programming. Following I will show two example projects of my time there.
+                  Another field that I have a high interest in, is Film and Animation. Whether it is exploring 2D and 3D Animation, video cutting or prop-making and scenography. I had the chance to participate in two ZDF filmproductions this year, but they are sadly not released yet. 
                   <br />
-                  <br />
-                  In the class Multimedia Studio Practices II by José Teixeira we created in just a few weeks short 3-Dimensional Clips in Maya with topics of our choice.
-                  I was lucky to have another 3-D animation course in parallel because there had to be learned a lot in just a short amount of time. And the language barrier did not make it easier. But in the end I was impressed how much is possible if you really lean into it. I am definitely still at a very early stage but I´m really interested to do more in that direction in the future.
+                  <br /> The following clip I created in Maya:
                 </p>
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                   <iframe
@@ -481,9 +485,8 @@ In our work, we show alternative strategies of crisis management that focus on t
                   ></iframe>
                 </div>
                 <p>
-                In the class Contemporary Art Theory and Lab Practices II with Carlos Amaral and Rui Caldas we learned everything about sound and video recording, production and editing.
-                My group and me decided to create a documentary. I liked that we were not working at home or uni for this project but at the place we were documenting. Talking to the people and their lives was a approach for me where I learned a lot.
-                Also being at a professional sound studio imitating sounds and editing them in a very precise way was a new experience for me.</p>
+                Example of whole process of creating a documentary. From sound and video recording to production and editing.
+                </p>
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                   <iframe
                     src="https://player.vimeo.com/video/772871719?h=b70b09f1ca&amp;muted=0&amp;autoplay=0&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1"
@@ -501,10 +504,9 @@ In our work, we show alternative strategies of crisis management that focus on t
                   ></iframe>
                 </div>
                 <p>
-                  Visual experiments on disruptive climate system changes due to
-                  global warming. We only have only 8 more years to reach the
-                  tipping points of our earth. The dieback of the amazon
-                  rainforest is just one of them. <br /> Group project with Memo
+                  Video installation and visual experiments on disruptive climate system changes due to
+                  global warming and tipping points. The dieback of the amazon
+                  rainforest is one of them. <br /> Group project with Memo
                   Yapici, Kenny Löffler, Mariana Reinhardt
                 </p>
 
