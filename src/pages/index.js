@@ -27,7 +27,11 @@ import trackthebat5 from "../images/trackthebat5.png";
 import trackthebat6 from "../images/trackthebat6.png";
 import trackthebat7 from "../images/trackthebat7.png";
 import trackthebat8 from "../images/trackthebat8.png";
-
+import trackthebat9 from "../images/trackthebat9.jpeg";
+import trackthebat10 from "../images/trackthebat10.jpeg";
+import trackthebat11 from "../images/trackthebat11.jpeg";
+import trackthebat12 from "../images/trackthebat12.jpeg";
+import trackthebat13 from "../images/trackthebat13.jpeg";
 
 const IndexPage = (props) => {
   const [eventKey, setEventKey] = useState(null);
@@ -317,6 +321,16 @@ For bats, the increasingly mild winters due to climate change are a major proble
                 <img className="images mt-1" src={trackthebat7}></img>
                 <br /><br />Bat species in Berlin
                 <img className="images mt-1" src={trackthebat8}></img>
+                <br /><br />The project-book:
+                <img className="images mt-1" src={trackthebat9}></img>
+                <br />
+                <img className="images mt-1" src={trackthebat10}></img>
+                <br />
+                <img className="images mt-1" src={trackthebat11}></img>
+                <br />
+                <img className="images mt-1" src={trackthebat12}></img>
+                <br />
+                <img className="images mt-1" src={trackthebat13}></img>
                </>
                
             ),
