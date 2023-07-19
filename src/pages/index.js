@@ -27,7 +27,7 @@ import trackthebat5 from "../images/trackthebat5.png";
 import trackthebat6 from "../images/trackthebat6.png";
 import trackthebat7 from "../images/trackthebat7.png";
 import trackthebat8 from "../images/trackthebat8.png";
-import trackthebat9 from "../images/trackthebat9.jpeg";
+
 import trackthebat10 from "../images/trackthebat10.jpeg";
 import trackthebat11 from "../images/trackthebat11.jpeg";
 import trackthebat12 from "../images/trackthebat12.jpeg";
@@ -156,7 +156,7 @@ const IndexPage = (props) => {
                     &nbsp;Açaí, the superfood?
                   </a>
                   <br />
-                  Supervision: Prof. Dr. Marian Dörk and Lamin Manneh
+                  Supervision: Prof. Dr. Marian Dörk and Lamin Manneh, FH Potsdam
                   <br />
                   Teamwork: Mariana Reinhardt
                   <br />
@@ -208,20 +208,18 @@ const IndexPage = (props) => {
             body: (
               <>
                 <p>
-                One of my biggest passions is UX/UI. I had great fun redesigning the experience of
+                  Projects with design-studio NEEEU, Internship <br />
+                Redesign of
                   <a
                     href="https://neeeu.io/"
                     target="_blank"
                   >
-                    &nbsp;NEEEU´s website
+                    &nbsp;NEEEU website
                   </a>
-                
-                 , as well as participating in creating the App games "Jo´s Memory" and "Magic Roads to Aliso". For both I worked with on the UI/UX and Augmented reality inputs.
-
-                 Both mobile games convey knowledge about archaeological objects in a playful way. Three museums in the field of archaeology and a digital agency have joined forces with citizens and are working together to develop new digital communication formats. The aim of this alliance is to use interactive media (such as virtual and augmented reality) to make archaeological working methods (excavation, archiving, restoration, interpretation, etc.) tangible for everyone.
-              <br />
-                  <br />
-                  Jo´s Memory:
+                  
+                 , Teamwork 
+                 <br />
+                  App Jo´s Memory:
                   <a
                     href="https://neeeu.io/projects/jos-memory-a-game-that-opens-up-access-to-archeology"
                     target="_blank"
@@ -232,9 +230,9 @@ const IndexPage = (props) => {
                     href="https://apps.apple.com/us/app/jos-memory/id1577374989"
                     target="_blank"
                   >
-                    &nbsp;Appstore </a>
-                  <br /><br />
-                  Magic Roads to Aliso: 
+                    &nbsp;Appstore</a>, Teamwork
+                  <br />
+                  App Magic Roads to Aliso: 
                   <a
                     href="https://neeeu.io/projects/magic-roads-to-aliso-dancing-skeletons-a-mysterious-germanic-seer-and-chickens-that-predict-the-future"
                     target="_blank"
@@ -247,6 +245,14 @@ const IndexPage = (props) => {
                   >
                     &nbsp;Appstore 
                   </a>
+                  , Teamwork
+                  <br /><br />
+                 For both Apps I worked on the UI/UX and Augmented reality inputs.
+
+                 Both convey knowledge about archaeological objects in a playful way. Three museums in the field of archaeology and a digital agency have joined forces with citizens and are working together to develop new digital communication formats. The aim of this alliance is to use interactive media (such as virtual and augmented reality) to make archaeological working methods (excavation, archiving, restoration, interpretation, etc.) tangible for everyone.
+              <br />
+                  <br />
+                  
     
 
 
@@ -279,16 +285,17 @@ const IndexPage = (props) => {
           {{
             title: (
               <h1>
-                Track 
+                Citizen 
                 <br />
-                the bat
+                Science
               </h1>
             ),
             body: (
               <>
                 <p>
- A tool for documenting bat sightings with Citizen Science.
+ Track the bat: A tool for documenting bat sightings with Citizen Science.
 <br />
+Supervision: Prof. Boris Müller, Frank Rausch, FH Potsdam, Bachelor-Project
 <br />
 Bats do not play a big role in our everyday life, although they are all around us and especially in cities, due to shelter, niches and food sources. 
 <br />
@@ -322,8 +329,7 @@ For bats, the increasingly mild winters due to climate change are a major proble
                 <br /><br />Bat species in Berlin
                 <img className="images mt-1" src={trackthebat8}></img>
                 <br /><br />The project-book:
-                <img className="images mt-1" src={trackthebat9}></img>
-                <br />
+               
                 <img className="images mt-1" src={trackthebat10}></img>
                 <br />
                 <img className="images mt-1" src={trackthebat11}></img>
@@ -490,12 +496,10 @@ In our work, we show alternative strategies of crisis management that focus on t
             body: (
               <>
                 <p>
-               
+                  Zoom Zoom: 3D Animation in Maya
                   <br />
-                  <br />
-                  Another field that I have a high interest in, is Film and Animation. Whether it is exploring 2D and 3D Animation, video cutting or prop-making and scenography. I had the chance to participate in two ZDF filmproductions this year, but they are sadly not released yet. 
-                  <br />
-                  <br /> The following clip I created in Maya:
+                  
+                  Supervision: José Teixera, ESAD Porto
                 </p>
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                   <iframe
@@ -514,7 +518,11 @@ In our work, we show alternative strategies of crisis management that focus on t
                   ></iframe>
                 </div>
                 <p>
-                Example of whole process of creating a documentary. From sound and video recording to production and editing.
+                O Cuteleiro: Documentary (sound and video recording, production, editing)
+                <br />
+                Supervision: Carlos Amaral, Rui Caldas, ESAD Porto
+                <br />
+                Teamwork: Helena Sá, Tatiana Pereira
                 </p>
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                   <iframe
@@ -533,10 +541,11 @@ In our work, we show alternative strategies of crisis management that focus on t
                   ></iframe>
                 </div>
                 <p>
-                  Video installation and visual experiments on disruptive climate system changes due to
-                  global warming and tipping points. The dieback of the amazon
-                  rainforest is one of them. <br /> Group project with Memo
-                  Yapici, Kenny Löffler, Mariana Reinhardt
+                  Boreal Forests and Amazon Rainforest: Video installation and visual experiments on tipping points
+                  <br /> 
+                  Supervision: Prof. Alexandra Martini, Myriel Milicevic
+                  <br />
+                  Teamwork: Memo Yapici, Kenny Löffler, Mariana Reinhardt
                 </p>
 
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
