@@ -13,11 +13,7 @@ import speculative1 from "../images/speculative1.png";
 import acai1 from "../images/acai1.png";
 import acai2 from "../images/acai2.png";
 
-import tohil1 from "../images/tohil1.png";
-import tohil2 from "../images/tohil2.png";
-import tohil3 from "../images/tohil3.png";
 
-import tippingpoints1 from "../images/tippingpoints1.jpg";
 
 import trackthebat1 from "../images/trackthebat1.png";
 import trackthebat2 from "../images/trackthebat2.png";
@@ -296,7 +292,7 @@ const IndexPage = (props) => {
  Track the bat: A tool for documenting bat sightings with Citizen Science.
 <br />
 Supervision: Prof. Boris Müller, Frank Rausch, FH Potsdam, Bachelor-Project
-<br />
+<br /><br />
 Bats do not play a big role in our everyday life, although they are all around us and especially in cities, due to shelter, niches and food sources. 
 <br />
 <br />
