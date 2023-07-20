@@ -289,7 +289,7 @@ const IndexPage = (props) => {
             body: (
               <>
                 <p>
- Track the bat: A tool for documenting bat sightings with Citizen Science.
+ Track the bat: A tool for documenting bat sightings with Citizen Science
 <br />
 Supervision: Prof. Boris Müller, Frank Rausch, FH Potsdam, Bachelor-Project
 <br /><br />
