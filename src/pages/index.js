@@ -20,6 +20,10 @@ import scARf1 from "../images/scARf1.jpeg";
 import scARf2 from "../images/scARf2.png";
 import scARf3 from "../images/scARf3.jpg";
 
+import knit1 from "../images/knit1.png";
+import knit2 from "../images/knit2.jpg";
+import knit3 from "../images/knit3.jpg";
+
 import trackthebat1 from "../images/trackthebat1.png";
 import trackthebat2 from "../images/trackthebat2.png";
 import trackthebat3 from "../images/trackthebat3.png";
@@ -182,11 +186,11 @@ const IndexPage = (props) => {
                     }}
                   ></iframe>
                 </div>
+
                 <img className="images mt-1" src={scARf1}></img>
                 <div style={{ display: "flex", flexDirection: "row", gap: "1rem" }} >
                 <img className="images mt-1" src={scARf2}></img>
                 <img className="images mt-1" src={scARf3}></img>
-
                 </div>
                </>
                
@@ -238,7 +242,6 @@ const IndexPage = (props) => {
                 <img className="images mt-1" src={timeportals1}></img>
                 <img className="images mt-1" src={timeportals2}></img>
            
-
                 </div>
                </>
                
@@ -493,6 +496,50 @@ const IndexPage = (props) => {
                 </div>
                 <br />
                 <img className="images" src={speculative1}></img>
+              </>
+            ),
+          }}
+        </Container>
+
+        <Container coral>
+          {{
+            title: (
+              <h1>
+                Knitting with
+                <br /> the kniterate
+              </h1>
+            ),
+            body: (
+              <>
+              
+                <p>
+                  <span className="pfeil">↘</span> Freelance Projects, 2024/25
+                  <br />
+              <br />
+                  
+                The Kniterate is a digitally controlled knitting machine that makes it possible to translate ideas directly from the design software into textile structures. Thanks to its flexibility, color gradients, thread thicknesses and stitch sizes can be precisely controlled - ideal for experimental knitting beyond classic hand techniques.
+
+
+                <br /><br />
+                In my projects, I mainly used the device for micro scarves, which I designed in the software as reversible jacquard fabrics. Color combinations play a central role here: I deliberately try out strong contrasts and subtle tone-on-tone games, adjust thread thicknesses and stitch patterns and let myself be surprised by the unpredictable effects of the knitting machine.
+
+                <br /><br />
+                Together with my sister, I immersed myself in the world of Kniterate by learning by doing. We started by learning the basics of the software and then gradually moved on to more complex patterns and techniques.
+
+                <br /><br />
+                One highlight was our own collective exhibition, in which my scarf designs were shown. The spectrum there ranged from illustrative motifs and typographic statements to purely experimental image fields.
+                <br /><br />
+                We are currently developing new knitting ideas such as balaclavas and pollunders. In this way, concept, illustration and fashion craftsmanship merge into wearable statements that fully exploit the potential of digital knitting technology.
+                <br />
+                </p>
+                
+
+                <img className="images mt-1" src={knit1}></img>
+                <div style={{ display: "flex", flexDirection: "row", gap: "1rem" }} >
+                <img className="images mt-1" src={knit2}></img>
+                <img className="images mt-1" src={knit3}></img>
+                </div>
+              
               </>
             ),
           }}
