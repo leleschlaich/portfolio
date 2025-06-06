@@ -13,7 +13,12 @@ import speculative1 from "../images/speculative1.png";
 import acai1 from "../images/acai1.png";
 import acai2 from "../images/acai2.png";
 
+import timeportals1 from "../images/timeportals1.png";
+import timeportals2 from "../images/timeportals2.png";
 
+import scARf1 from "../images/scARf1.jpeg";
+import scARf2 from "../images/scARf2.png";
+import scARf3 from "../images/scARf3.jpg";
 
 import trackthebat1 from "../images/trackthebat1.png";
 import trackthebat2 from "../images/trackthebat2.png";
@@ -78,7 +83,7 @@ const IndexPage = (props) => {
           }}
         </Container>
 
-        <Container>
+        {/* <Container>
           {{
             title: (
               <h1>
@@ -130,6 +135,70 @@ const IndexPage = (props) => {
               </>
             ),
           }}
+        </Container> */}
+
+<Container>
+          {{
+            title: (
+              <h1>
+                ScARf 
+                <br />
+                Design
+              </h1>
+            ),
+            body: (
+              <>
+                <p>
+                Website-Link:
+                  <a
+                    href="https://leleschlaich.github.io/decolonizingdataviz/"
+                    target="_blank"
+                  >
+                    &nbsp;Açaí, the superfood?
+                  </a>
+                  <br />
+                  Supervision: Prof. Dr. Marian Dörk and Lamin Manneh, FH Potsdam
+                  <br />
+                  Teamwork: Mariana Reinhardt
+                  <br />
+                  
+                  
+                  <br />
+                We were intrigued by the story of the açaí and how it is entangled by the marketing of superfoods. From an indigenous food to a trendy superfood bowl: how did this process happen? How does the process of exotification of products originally from the Global South happens? What is the impact of such products? On communities, environmentally and more.
+                <br />
+                  
+                  <br />We looked at the small stories and data but also the important numbers, historical facts, papers and information to see bigger picture on how the açaí is depicted, in a small but also on a larger scale. For example, we were fascinated by the indigenous myth but then also seeing the numbers of exportation nowadays.
+                  <br />
+                  <br />In a lot of sources the opinion and perspectives shown don´t capture the other side of the story. For instance when researching about superfoods, they are mostly highly advertised and if we look deeper there’s a lot more we could find in a critical direction.
+                 
+                </p>
+
+                <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+                <iframe
+                    src="https://player.vimeo.com/video/755631196?h=3d2e8cffff?autoplay=1&amp;muted=1&amp;color=ffffff&amp;portrait=0&amp;dnt=1"
+                    
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  ></iframe>
+                </div>
+
+                <div style={{ display: "flex", flexDirection: "row", gap: "1rem" }} >
+                <img className="images mt-1" src={scARf2}></img>
+                <img className="images mt-1" src={scARf3}></img>
+
+                </div>
+               </>
+               
+            ),
+          }}
         </Container>
 
         <Container>
@@ -171,7 +240,7 @@ const IndexPage = (props) => {
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                 <iframe
                     src="https://player.vimeo.com/video/755631196?h=3d2e8cffff?autoplay=1&amp;muted=1&amp;color=ffffff&amp;portrait=0&amp;dnt=1"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                    
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
@@ -257,7 +326,7 @@ const IndexPage = (props) => {
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                 <iframe
                     src="https://player.vimeo.com/video/844899020?autoplay=1&amp;muted=1&amp;color=ffffff&amp;portrait=0&amp;dnt=1"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                    
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
@@ -547,7 +616,7 @@ In our work, we show alternative strategies of crisis management that focus on t
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                   <iframe
                     src="https://player.vimeo.com/video/363540500?autoplay=1&amp;muted=1&amp;color=ffffff&amp;portrait=0#t=9m19s&amp;dnt=1"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                    
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
