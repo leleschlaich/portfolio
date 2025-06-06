@@ -141,41 +141,34 @@ const IndexPage = (props) => {
           {{
             title: (
               <h1>
-                ScARf 
+                Flow 
                 <br />
-                Design
+                scARf
               </h1>
             ),
             body: (
               <>
                 <p>
-                Website-Link:
-                  <a
-                    href="https://leleschlaich.github.io/decolonizingdataviz/"
-                    target="_blank"
-                  >
-                    &nbsp;Açaí, the superfood?
-                  </a>
+                
+                   <span className="pfeil">↘</span> Hybrid textile design with AR
                   <br />
-                  Supervision: Prof. Dr. Marian Dörk and Lamin Manneh, FH Potsdam
-                  <br />
-                  Teamwork: Mariana Reinhardt
+                   <span className="pfeil">↘</span> Freelancing project with Feia Nehl and Moniteurs Design, 2023
                   <br />
                   
-                  
                   <br />
-                We were intrigued by the story of the açaí and how it is entangled by the marketing of superfoods. From an indigenous food to a trendy superfood bowl: how did this process happen? How does the process of exotification of products originally from the Global South happens? What is the impact of such products? On communities, environmentally and more.
+                  In collaboration with Feia Nehl and Moniteurs Design, the Flow scARf project was created as part of the Architecture Biennale in Venice, which combines fashion with augmented reality. Visitors were able to discover our animated scarf design via smartphone - a visual and experimental interpretation of the theme of people flow through movement, material and technology.
+
                 <br />
                   
-                  <br />We looked at the small stories and data but also the important numbers, historical facts, papers and information to see bigger picture on how the açaí is depicted, in a small but also on a larger scale. For example, we were fascinated by the indigenous myth but then also seeing the numbers of exportation nowadays.
+                  <br />The scarf picks up on the effects of the flooding in Venice - specifically on St. Mark's Square. One side of the scarf shows the natural, organic flow of movement of passers-by on an ordinary day. The other side visualizes the rigid, forced paths on the walkways that arise during high water. Flow scARf combines analog textile with digital storytelling and makes social dynamics visually and emotionally tangible. An immersive experience to flip over.
+
                   <br />
-                  <br />In a lot of sources the opinion and perspectives shown don´t capture the other side of the story. For instance when researching about superfoods, they are mostly highly advertised and if we look deeper there’s a lot more we could find in a critical direction.
-                 
-                </p>
+                  <br />AR fascinates me because I feel like it is still in its infancy - full of untapped possibilities and open to innovation. I find it particularly exciting that we as designers and developers can actively shape the future of this medium. Exploring new applications and combining the digital with the physical is both a challenge and a creative opportunity.
+                <br /><br /></p>
 
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                 <iframe
-                    src="https://player.vimeo.com/video/755631196?h=3d2e8cffff?autoplay=1&amp;muted=1&amp;color=ffffff&amp;portrait=0&amp;dnt=1"
+                    src="https://player.vimeo.com/video/1091154500?autoplay=1&amp;muted=1&amp;color=ffffff&amp;portrait=0&amp;dnt=1"
                     
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
@@ -189,7 +182,7 @@ const IndexPage = (props) => {
                     }}
                   ></iframe>
                 </div>
-
+                <img className="images mt-1" src={scARf1}></img>
                 <div style={{ display: "flex", flexDirection: "row", gap: "1rem" }} >
                 <img className="images mt-1" src={scARf2}></img>
                 <img className="images mt-1" src={scARf3}></img>
@@ -205,35 +198,91 @@ const IndexPage = (props) => {
           {{
             title: (
               <h1>
-                Decolonising 
+                time 
                 <br />
-                Design
+                portals
               </h1>
             ),
             body: (
               <>
                 <p>
-                Website-Link:
+                  <span className="pfeil">↘</span>  Experience history anew with AR
+                  <br />
+                 
+                  
+                   <span className="pfeil">↘</span> Project at FRAMEFIELD, 2024/25
+                  <br />
+                  <span className="pfeil">↘</span> Website-Link & Video:
+                
+                  <a
+                    href="https://www.framefield.com/projects/time-portals#slide_0"
+                    target="_blank"
+                  >
+                    &nbsp;TimePortals
+                  </a>
+                  
+                  <br /><br />
+                  TimePortals is an AR experience on the former AEG site in Berlin and is available in the App Store. The app makes it possible to experience historical places spatially and atmospherically. I was involved in the content and design realization - from the creation of the audio guide texts to the selection of archive material and the design of 3D objects. These include a model of the site through the ages, the reconstructed course of historical streets and illustrations of workers and old streetcars in digital space.
+
+
+                <br />
+                  
+                  <br />A particular focus was on the precise localization of the content at the original locations and the development of a coherent timeline that logically and narratively connects the historical stations. I adapted all visual elements to the audio layer in Unity to create a consistent and immersive experience. I designed the app icon and oversaw the entire user testing process to optimize the usability and impact of the application.
+
+
+                  <br />
+                  <br />The AEG tour is based on archives of the German Museum of Technology and guides users through central chapters of Berlin's industrial history. Thanks to an intuitive app interface and a narrator's voice, history is not only told - it is made tangible.
+                </p>
+
+                <div>
+                <img className="images mt-1" src={timeportals1}></img>
+                <img className="images mt-1" src={timeportals2}></img>
+           
+
+                </div>
+               </>
+               
+            ),
+          }}
+        </Container>
+
+        <Container>
+          {{
+            title: (
+              <h1>
+                Açaí – 
+                <br />
+                The Superfood?
+              </h1>
+            ),
+            body: (
+              <>
+                <p>
+                   <span className="pfeil">↘</span> An interactive platform for critical reflection
+                 <br />
+                
+                  <span className="pfeil">↘</span> Project during studies with Prof. Dr. Marian Dörk & Lamin Manneh, Decolonizing Design (FH Potsdam) with Mariana Reinhardt, 2022
+                 
+                  <br />
+                  <span className="pfeil">↘</span> Website-Link:
                   <a
                     href="https://leleschlaich.github.io/decolonizingdataviz/"
                     target="_blank"
                   >
                     &nbsp;Açaí, the superfood?
                   </a>
-                  <br />
-                  Supervision: Prof. Dr. Marian Dörk and Lamin Manneh, FH Potsdam
-                  <br />
-                  Teamwork: Mariana Reinhardt
-                  <br />
                   
                   
                   <br />
-                We were intrigued by the story of the açaí and how it is entangled by the marketing of superfoods. From an indigenous food to a trendy superfood bowl: how did this process happen? How does the process of exotification of products originally from the Global South happens? What is the impact of such products? On communities, environmentally and more.
+                  <br />
+                In this project, we examine the journey of the açaí berry - from its importance as a traditional, indigenous food in the Amazon region to its status as a global superfood trend. How did this change come about? What role does marketing play in the exoticization of foods from the Global South - and what does this say about persisting colonial structures?
+
                 <br />
                   
-                  <br />We looked at the small stories and data but also the important numbers, historical facts, papers and information to see bigger picture on how the açaí is depicted, in a small but also on a larger scale. For example, we were fascinated by the indigenous myth but then also seeing the numbers of exportation nowadays.
+                  <br />We have brought together personal stories, indigenous myths, export data and scientific studies to paint a multi-layered picture of the global development of the açaí berry - from individual perspectives to systemic contexts. Many sources lack a critical analysis: superfoods are usually glorified without reflection and without shedding light on their complex backgrounds.
+
                   <br />
-                  <br />In a lot of sources the opinion and perspectives shown don´t capture the other side of the story. For instance when researching about superfoods, they are mostly highly advertised and if we look deeper there’s a lot more we could find in a critical direction.
+                  <br />Our interactive website invites users to choose their own paths through the topic and critically examine cultural appropriation, globalization and environmental impacts - for example, the question of how a berry deeply rooted in indigenous traditions has become a decontextualized wellness symbol in the Global North.
                  
                 </p>
 
@@ -261,121 +310,39 @@ const IndexPage = (props) => {
           }}
         </Container>
 
-<Container>
-          {{
-            title: (
-              <h1>
-                UX 
-                <br />
-                UI
-              </h1>
-            ),
-            body: (
-              <>
-                <p>
-                  Projects with design-studio NEEEU, Internship <br />
-                Redesign of
-                  <a
-                    href="https://neeeu.io/"
-                    target="_blank"
-                  >
-                    &nbsp;NEEEU website
-                  </a>
-                  
-                 , Teamwork 
-                 <br />
-                  App Jo´s Memory:
-                  <a
-                    href="https://neeeu.io/projects/jos-memory-a-game-that-opens-up-access-to-archeology"
-                    target="_blank"
-                  >
-                    &nbsp;Information </a>
-                  and 
-                  <a
-                    href="https://apps.apple.com/us/app/jos-memory/id1577374989"
-                    target="_blank"
-                  >
-                    &nbsp;Appstore</a>, Teamwork
-                  <br />
-                  App Magic Roads to Aliso: 
-                  <a
-                    href="https://neeeu.io/projects/magic-roads-to-aliso-dancing-skeletons-a-mysterious-germanic-seer-and-chickens-that-predict-the-future"
-                    target="_blank"
-                  >
-                    &nbsp;Information </a>
-                  and 
-                  <a
-                    href="https://apps.apple.com/us/app/magic-roads/id6443717891"
-                    target="_blank"
-                  >
-                    &nbsp;Appstore 
-                  </a>
-                  , Teamwork
-                  <br /><br />
-                 For both Apps I worked on the UI/UX and Augmented reality inputs.
-
-                 Both convey knowledge about archaeological objects in a playful way. Three museums in the field of archaeology and a digital agency have joined forces with citizens and are working together to develop new digital communication formats. The aim of this alliance is to use interactive media (such as virtual and augmented reality) to make archaeological working methods (excavation, archiving, restoration, interpretation, etc.) tangible for everyone.
-              <br />
-                  <br />
-                  
-    
-
-
-                </p>
-
-                <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-                <iframe
-                    src="https://player.vimeo.com/video/844899020?autoplay=1&amp;muted=1&amp;color=ffffff&amp;portrait=0&amp;dnt=1"
-                    
-                    frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%",
-                    }}
-                  ></iframe>
-                </div>
-                
-               </>
-               
-            ),
-          }}
-        </Container>
 
 <Container>
           {{
             title: (
               <h1>
-                Citizen 
+                track  
                 <br />
-                Science
+                the bat
               </h1>
             ),
             body: (
               <>
                 <p>
- Track the bat: A tool for documenting bat sightings with Citizen Science
-<br />
-Supervision: Prof. Boris Müller, Frank Rausch, FH Potsdam, Bachelor-Project
-<br /><br />
-Bats do not play a big role in our everyday life, although they are all around us and especially in cities, due to shelter, niches and food sources. 
-<br />
-<br />
+             <span className="pfeil">↘</span> A tool for documenting bat sightings with Citizen Science
+            <br />
+            <span className="pfeil">↘</span> Bachelor thesis with Prof. Boris Müller and Frank Rausch (FH Potsdam), 2023
+            <br /><br />
+            Bats live among us - especially in cities - but often go unnoticed. The “Track the Bat” project aims to change this: An interactive, low-threshold website shows how urban spaces affect bats - and how city dwellers can actively contribute to their protection and research through citizen science.
+            <br />
+            <br />
 
-The aim of this work is to show how we, as inhabitants of cities, as citizen scientists, can contribute to the welfare of bats and at the same time support science, connect and inform ourselves. For this reason, a website is created as a tool and network. 
-<br />
-<br />
+            The application originated from the student project “Catch me if you can” at TU Berlin, in which ecological data was collected with the help of citizen science. This data - for example on bat species, insect occurrence, soil sealing and water areas - is visualized on an interactive map at 19 locations.
+
+            <br />
+            <br />
 
 
-The inspiration for „Track the Bat“ started from the student project: „Catch me if you can“ led by Dr. Tanja Straka at the TU Berlin. Data collection was started by students and supported by Citizen Science.<br /> „Track the Bat“ makes this data visible in the form of an interactive map, as part of a website. The data includes the 19 selected sites and associates per month the number of bats, bat species, food occurrence (insect numbers and species), ground conditions (degree of sealing) and the presence of water bodies on site. 
-<br />
-<br />
+            It is particularly clear how bats have to adapt to urban conditions and climate change - for example, through disturbed hibernation in milder temperatures.
 
-For bats, the increasingly mild winters due to climate change are a major problem, as they disrupt hibernation, which is essential for bats. My motivation is to show the bat as an example species, which has to adapt to humans and therefore to climate change. But it stands for many other animal species. The website „Track the Bat“ aims to make this visible through interactivity and to show how close the animals are to us.
+            <br />
+            <br />
+
+            With its clear, playful design, mobile optimization and intuitive navigation, the website invites people of all ages to rediscover urban nature - and to get actively involved.
                 </p>
                 <br />Welcome-Screen
                 <img className="images mt-1" src={trackthebat1}></img>
@@ -412,15 +379,21 @@ For bats, the increasingly mild winters due to climate change are a major proble
           {{
             title: (
               <h1>
-                Scrolly
+                Meat=
                 <br />
-                telling
+                Heat?
               </h1>
             ),
             body: (
               <>
                 <p>
-                Website-Link:
+                  <span className="pfeil">↘</span> Scrollytelling website on climate change and meat consumption
+                  <br />
+                
+                  
+                  <span className="pfeil">↘</span> Project during studies with Prof. Boris Müller (FH Potsdam) with Aline Sawalsky, 2020
+                   <br />
+                   <span className="pfeil">↘</span> Website-Link:
                   <a
                     href="https://interface.fh-potsdam.de/klimagrafik/meat-eq-heat/"
                     target="_blank"
@@ -428,16 +401,16 @@ For bats, the increasingly mild winters due to climate change are a major proble
                     &nbsp;Meat=Heat?
                   </a>
                   <br />
-                  Supervision: Prof. Boris Müller
                   <br />
-                  Teamwork: Aline Sawalsky
-                  <br />
-                  <br />
-                  Website to raise awareness on climate change in
-                  connection to meat consumption, written in Html and Css. 
-                  <br />
-                  <br />
-                  The main pillars in our concept are to not missionize the topic, but to communicate on a personal level, use simple communication, and to tell stories.
+                  Meat = Heat? is a scrollytelling website that draws attention to the links between meat consumption and climate change. Our aim was not to proselytize, but to make the topic accessible on a personal level, with clear language and narrative elements.
+                  <br /><br />
+                  The website starts with an animated graphic showing the increase in consumption of animal proteins from 1961 to the forecast for 2050 - in comparison between the global average and individual countries. 
+                  <br /><br />
+                  This is supplemented by a Sankey diagram that visualizes the CO2-equivalent emissions of four animal species in six categories: Agriculture, land use, animal feed, transportation, packaging and retail. This makes it easy to understand where emissions are generated and how our decisions affect the climate.
+                  <br /><br />
+                  The site also provides practical tips and facts for more conscious consumption. 
+
+
                   
                 </p>
                 
@@ -468,36 +441,37 @@ For bats, the increasingly mild winters due to climate change are a major proble
           {{
             title: (
               <h1>
-                Specula
-                <wbr />
-                tive
-                <br /> Design
+                The future
+                <br /> in a bag
               </h1>
             ),
             body: (
               <>
               
                 <p>
-                Website-Link:
+                  <span className="pfeil">↘</span> Speculative Design-Exploration
+                  <br />
+              
+                  <span className="pfeil">↘</span> Project during studies with Prof. Dr. Frank  Heidmann & M.A. Jordi Tost (FH Potsdam) with Fidel Thomet, Thomas Haas, Felix Harle, 2020
+                  <br /><span className="pfeil">↘</span> Website-Link:
                   <a
                     href="https://future-in-a-bag.vercel.app/#/"
                     target="_blank"
                   >
                     &nbsp;The future in a bag
-                  </a>
-                <br />
-               
-                  Supervision: Prof. Dr. Frank Heidmann and M.A. Jordi Tost
-                  <br />
-                  Teamwork: Fidel Thomet, Thomas Haas, Felix Harle
-                  <br />
-                  <br />
-                The Future in a Bag: What are everyday objects of crisis-ridden futures? A scenario space navigating between climate crisis, ageing and cyber attacks, which designs resilient artefacts between smartness, dumbness, convenience and inconvenience. How can the concept of resilience be organised in a decentralised, spontaneous, flexible and accessible way?
+                  </a><br /><br />
+                  
+                What might everyday objects look like in a future characterized by crises?
+
                 <br /><br />
-Our project is looking for possible scenarios. To do this, we created many small crisis visions of the future in which the population uses simple LoFi artefacts to protect themselves against two acute risks. For each scenario, we show a smart, i.e. high-tech prototype and a dumb, i.e. natural and intuitive prototype.
-<br /><br />
-In our work, we show alternative strategies of crisis management that focus on the autonomy and decision-making power of individual citizens. With the help of these speculative futures, we illustrate that a city can also be organised bottom-up in many respects.
-<br /><br />
+                The Future in a Bag is a speculative design project about possible life realities in future scenarios characterized by climate crisis, demographic change or cyber attacks. The focus is on the question of how resilience can be designed in a decentralized, spontaneous and accessible way.
+
+                <br /><br />
+                We developed a scenario generator, carried out worldbuilding and designed prototypes for various future scenarios - each in a “smart” (high-tech) and a “dumb” (low-tech) version. The artifacts were 3D-scanned and narratively embedded in their contexts.
+                <br /><br />
+                The result is an interactive website with micro-facets, each addressing two parallel crises. The designed objects function as speculative tools for self-help and strengthening individual agency.
+
+                <br /><br />
                  
                 </p>
 
@@ -524,32 +498,93 @@ In our work, we show alternative strategies of crisis management that focus on t
           }}
         </Container>
 
-        
-       {/*  <Container>
+<Container>
           {{
             title: (
               <h1>
-                data
+                ↘UX 
                 <br />
-                graphic
+                UI
               </h1>
             ),
             body: (
               <>
                 <p>
-                  The holy Tohil. The Fireplace of the Maya in data. <br /> 1000
-                  words with no words needed
+                  <span className="pfeil">↘</span> Projects in internship at NEEEU, 2021/22 <br />
+                
+                  <span className="pfeil">↘</span><a
+                    href="https://neeeu.io/"
+                    target="_blank"
+                  >
+                   &nbsp;NEEEU website
+                  </a>
+                  
+                 <br />
+                  <span className="pfeil">↘</span> App Jo´s Memory:
+                  <a
+                    href="https://neeeu.io/projects/jos-memory-a-game-that-opens-up-access-to-archeology"
+                    target="_blank"
+                  >
+                    &nbsp;Info </a>
+                  and 
+                  <a
+                    href="https://apps.apple.com/us/app/jos-memory/id1577374989"
+                    target="_blank"
+                  >
+                    &nbsp;Appstore</a>
+                  <br />
+                  <span className="pfeil">↘</span> App Magic Roads to Aliso: 
+                  <a
+                    href="https://neeeu.io/projects/magic-roads-to-aliso-dancing-skeletons-a-mysterious-germanic-seer-and-chickens-that-predict-the-future"
+                    target="_blank"
+                  >
+                    &nbsp;Info </a>
+                  and 
+                  <a
+                    href="https://apps.apple.com/us/app/magic-roads/id6443717891"
+                    target="_blank"
+                  >
+                    &nbsp;Appstore 
+                  </a>
+               
+                  <br /><br />
+                  During my time at NEEEU Spaces GmbH, I was involved in several projects - including the conception and design of the new studio website.
+                  <br /><br />
+                  Together with the team, I developed a web design that makes NEEEU's identity visible: a studio for interactive future formats that combines design, technology and social issues. The aim was to convey this interdisciplinary and experimental approach in terms of design - with a clear, modular structure, playful details and flexible content.
+                  <br /><br />
+                  I was also involved in two app projects, where I was responsible for the UI/UX design and the design of the augmented reality interactions. Both applications convey knowledge about archaeological objects in a playful way. Three archaeological museums worked together with a digital agency and members of the public on new forms of digital communication. The aim of the project was to use interactive media such as AR and VR to make archaeological working methods - such as excavation, archiving and interpretation - accessible to a wide audience.
+                  <br />
+                  <br />
+                  
+    
+
+
                 </p>
-                <img className="images mt-1" src={tohil1}></img>
-                <img className="images mt-1" src={tohil2}></img>
-                <img className="images mt-1" src={tohil3}></img>
-                <p>Photos by Renee Klaßen</p>
-              </>
+
+                <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+                <iframe
+                    src="https://player.vimeo.com/video/844899020?autoplay=1&amp;muted=1&amp;color=ffffff&amp;portrait=0&amp;dnt=1"
+                    
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  ></iframe>
+                </div>
+                
+               </>
+               
             ),
           }}
-        </Container> */}
+        </Container>
 
-        <Container>
+        {/* <Container>
           {{
             title: (
               <h1>
@@ -561,7 +596,7 @@ In our work, we show alternative strategies of crisis management that focus on t
             body: (
               <>
                 <p>
-                  Zoom Zoom: 3D Animation in Maya
+                  <span className="pfeil">↘</span> Zoom Zoom: 3D Animation in Maya
                   <br />
                   
                   Supervision: José Teixera, ESAD Porto
@@ -631,10 +666,10 @@ In our work, we show alternative strategies of crisis management that focus on t
                 </div>
                 {/* <img className="images mt-1" src={tippingpoints1}></img>
               </> */}
-              </>
+              {/* </>
             ),
           }}
-        </Container>
+        // </Container> */} 
 
         <div className="container footer">
           <h1>
