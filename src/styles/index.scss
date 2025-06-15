@@ -44,19 +44,19 @@ a {
   position: relative;
 
   &:nth-child(even) {
-    background-color: #00973d;
+    background-color: #008a37;
     color: #f4f4ff;
     a {
-      color: #f96872;
+      color: #f96885;
     }
   }
 
   &:nth-child(odd) {
-    background-color: #f96872;
+    background-color: #f96885;
     color: #fdf5f4;
     // text-align: right;
     a {
-      color: #399a2f;
+      color: #008a37;
     }
   }
 }
